@@ -1,0 +1,47 @@
+
+modLoader="javafml" #
+
+loaderVersion="[40,)" 
+
+
+license="All rights reserved"
+
+[[mods]] 
+
+modId="lachitems" 
+
+version="${file.jarVersion}"
+
+displayName="Extra Items" 
+
+
+logoFile="examplemod.png" 
+
+credits="a mod made by Lach" 
+
+authors="Lach" 
+
+description='''
+This is a mod where you can get more items and crafting recipies than normal. '''
+
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.lachitems]] 
+  
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+   
+    versionRange="[40,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+# Here's another dependency
+[[dependencies.lachitems]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
